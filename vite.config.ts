@@ -5,10 +5,8 @@ import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'vite';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const repoName = 'Rahul-Dosemate';
 
-export default defineConfig(({ command }) => ({
-  base: command === 'build' ? `/${repoName}/` : '/',
+export default defineConfig({
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
@@ -19,7 +17,7 @@ export default defineConfig(({ command }) => ({
     // HMR is disabled in AI Studio via DISABLE_HMR env var.
     // Do not modify—file watching is disabled to prevent flickering during agent edits.
     hmr: process.env.DISABLE_HMR !== 'true',
-    // Disable file watching when DISABLE_HMR is true to save CPU during agent edits.
+    // Disable file watching when DISABLE_HMR true to save CPU during agent edits.
     watch: process.env.DISABLE_HMR === 'true' ? null : {},
   },
-}));
+});
