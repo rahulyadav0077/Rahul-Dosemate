@@ -1,0 +1,285 @@
+{
+  "users": [
+    {
+      "id": "user-demo-1",
+      "name": "Alex Johnson",
+      "email": "alex@dosemate.app",
+      "password_hash": "demo_hash"
+    },
+    {
+      "id": "user-1790223143803",
+      "name": "Rahul",
+      "email": "rahul@gmail.com",
+      "password_hash": "hashed"
+    },
+    {
+      "id": "user-1790223811217",
+      "name": "rahul",
+      "email": "alex@dose",
+      "password_hash": "hashed"
+    },
+    {
+      "id": "user-1790224495437",
+      "name": "Test User",
+      "email": "testuser@example.com",
+      "password_hash": "d1e7e42d381a8ba7668b93c92cda04e9f6fac5c1c55c2e7e40cbb4a51dd0c0cd",
+      "token": "jwt-7e8fd641-e511-484f-a8dc-2b30e3ef4220-user-1790224495437"
+    },
+    {
+      "id": "user-1790224950676",
+      "name": "Suraj",
+      "email": "suraj@gmail.com",
+      "password_hash": "943f3233a248a30ecb1e1f6fdf251f66eb630a27fea8990e8c4cefd3e271390f",
+      "token": "jwt-08b1d33d-de3d-49a8-be07-cff19edaea3a-user-1790224950676"
+    },
+    {
+      "id": "user-demo-1",
+      "name": "Demo User",
+      "email": "demo@dosemate.app",
+      "password_hash": "f66ab64ee835a598a63873fc71f4b1fdf4416f35e1623d4aaf4088dc612bb8a2",
+      "token": null
+    }
+  ],
+  "medicines": [
+    {
+      "medicine_name": "Vitamin C",
+      "dosage": "500mg",
+      "reminder_times": [
+        "10:14"
+      ],
+      "start_date": "2026-09-24",
+      "end_date": "2026-12-31",
+      "frequency": "Daily",
+      "instructions": "After Food",
+      "notes": "Rahul Bhai",
+      "color": "#10b981",
+      "active": true,
+      "id": "med-1790225002581",
+      "user_id": "user-1790224950676",
+      "created_at": "2026-09-24T04:43:22.587Z"
+    },
+    {
+      "medicine_name": "Vitamin c",
+      "dosage": "500mg",
+      "reminder_times": [
+        "09:51"
+      ],
+      "start_date": "2026-09-24",
+      "end_date": "2026-12-31",
+      "frequency": "Daily",
+      "instructions": "After Food",
+      "notes": "",
+      "color": "#2563eb",
+      "active": true,
+      "id": "med-1790223568326",
+      "user_id": "user-1790223143803",
+      "created_at": "2026-09-24T04:19:28.330Z"
+    },
+    {
+      "id": "med-1",
+      "user_id": "user-demo-1",
+      "medicine_name": "Paracetamol",
+      "dosage": "500 mg",
+      "instructions": "After Food",
+      "start_date": "2026-09-24",
+      "end_date": "2026-12-31",
+      "frequency": "Daily",
+      "reminder_times": [
+        "10:00",
+        "20:00"
+      ],
+      "color": "#3b82f6",
+      "notes": "For mild fever and post-lunch headaches",
+      "active": true
+    },
+    {
+      "id": "med-2",
+      "user_id": "user-demo-1",
+      "medicine_name": "Vitamin D3",
+      "dosage": "1 Tablet",
+      "instructions": "With Food",
+      "start_date": "2026-09-24",
+      "end_date": "2026-12-31",
+      "frequency": "Daily",
+      "reminder_times": [
+        "14:00"
+      ],
+      "color": "#10b981",
+      "notes": "Bone strength supplement",
+      "active": true
+    },
+    {
+      "id": "med-3",
+      "user_id": "user-demo-1",
+      "medicine_name": "Amoxicillin Antibiotic",
+      "dosage": "250 mg",
+      "instructions": "Before Food",
+      "start_date": "2026-09-24",
+      "end_date": "2026-10-15",
+      "frequency": "Daily",
+      "reminder_times": [
+        "08:00",
+        "20:00"
+      ],
+      "color": "#f59e0b",
+      "notes": "Complete entire course as directed by doctor",
+      "active": true
+    }
+  ],
+  "reminders": [
+    {
+      "id": "rem-1",
+      "medicine_id": "med-1",
+      "user_id": "user-demo-1",
+      "reminder_time": "10:00",
+      "frequency": "Daily",
+      "status": "Taken",
+      "snooze_until": null,
+      "enabled": true,
+      "date": "2026-09-24",
+      "medicine_name": "Paracetamol",
+      "dosage": "500 mg",
+      "instructions": "After Food",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "rem-2",
+      "medicine_id": "med-2",
+      "user_id": "user-demo-1",
+      "reminder_time": "14:00",
+      "frequency": "Daily",
+      "status": "Taken",
+      "snooze_until": null,
+      "enabled": true,
+      "date": "2026-09-24",
+      "medicine_name": "Vitamin D3",
+      "dosage": "1 Tablet",
+      "instructions": "With Food",
+      "color": "#10b981"
+    },
+    {
+      "id": "rem-3",
+      "medicine_id": "med-3",
+      "user_id": "user-demo-1",
+      "reminder_time": "08:00",
+      "frequency": "Daily",
+      "status": "Missed",
+      "snooze_until": null,
+      "enabled": true,
+      "date": "2026-09-24",
+      "medicine_name": "Amoxicillin Antibiotic",
+      "dosage": "250 mg",
+      "instructions": "Before Food",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "rem-1790223568331-7o2t",
+      "medicine_id": "med-1790223568326",
+      "user_id": "user-1790223143803",
+      "reminder_time": "09:51",
+      "frequency": "Daily",
+      "status": "Taken",
+      "snooze_until": null,
+      "enabled": true,
+      "date": "2026-09-24",
+      "medicine_name": "Vitamin c",
+      "dosage": "500mg",
+      "instructions": "After Food",
+      "color": "#2563eb"
+    },
+    {
+      "id": "rem-1790225002587-f77u",
+      "medicine_id": "med-1790225002581",
+      "user_id": "user-1790224950676",
+      "reminder_time": "10:14",
+      "frequency": "Daily",
+      "status": "Taken",
+      "snooze_until": null,
+      "enabled": true,
+      "date": "2026-09-24",
+      "medicine_name": "Vitamin C",
+      "dosage": "500mg",
+      "instructions": "After Food",
+      "color": "#10b981"
+    }
+  ],
+  "history": [
+    {
+      "id": "hist-1790225056031",
+      "medicine_id": "med-1790225002581",
+      "user_id": "user-1790224950676",
+      "medicine_name": "Vitamin C",
+      "dosage": "500mg",
+      "scheduled_time": "2026-09-24 10:14",
+      "action_time": "2026-09-24 10:14",
+      "status": "Taken",
+      "instructions": "After Food",
+      "notes": "Taken on time",
+      "created_at": "2026-09-24T04:44:16.031Z"
+    },
+    {
+      "id": "hist-1790223715314",
+      "medicine_id": "med-1790223568326",
+      "user_id": "user-1790223143803",
+      "medicine_name": "Vitamin c",
+      "dosage": "500mg",
+      "scheduled_time": "2026-09-24 09:51",
+      "action_time": "2026-09-24 09:51",
+      "status": "Taken",
+      "instructions": "After Food",
+      "notes": "Taken on time",
+      "created_at": "2026-09-24T04:21:55.314Z"
+    },
+    {
+      "id": "hist-1790223157803",
+      "medicine_id": "med-1",
+      "user_id": "user-demo-1",
+      "medicine_name": "Paracetamol",
+      "dosage": "500 mg",
+      "scheduled_time": "2026-09-24 10:00",
+      "action_time": "2026-09-24 09:42",
+      "status": "Taken",
+      "instructions": "After Food",
+      "notes": "Taken on time",
+      "created_at": "2026-09-24T04:12:37.803Z"
+    },
+    {
+      "id": "hist-1",
+      "medicine_id": "med-2",
+      "user_id": "user-demo-1",
+      "medicine_name": "Vitamin D3",
+      "dosage": "1 Tablet",
+      "scheduled_time": "2026-09-24 14:00",
+      "action_time": "2026-09-24 14:05",
+      "status": "Taken",
+      "instructions": "With Food",
+      "notes": "Taken with water after lunch",
+      "created_at": "2026-09-24T04:08:12.040Z"
+    },
+    {
+      "id": "hist-2",
+      "medicine_id": "med-3",
+      "user_id": "user-demo-1",
+      "medicine_name": "Amoxicillin Antibiotic",
+      "dosage": "250 mg",
+      "scheduled_time": "2026-09-24 08:00",
+      "action_time": "2026-09-24 08:45",
+      "status": "Missed",
+      "instructions": "Before Food",
+      "notes": "User did not respond within reminder window",
+      "created_at": "2026-09-24T04:08:12.040Z"
+    }
+  ],
+  "settings": {
+    "id": "settings-1",
+    "user_id": "user-demo-1",
+    "notifications_enabled": true,
+    "alarm_enabled": true,
+    "voice_enabled": true,
+    "alarm_volume": 85,
+    "alarm_sound": "chime",
+    "voice_language": "en",
+    "snooze_duration": 10,
+    "alarm_duration": 2
+  }
+}

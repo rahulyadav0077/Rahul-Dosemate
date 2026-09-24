@@ -1,0 +1,19 @@
+{
+  "id": "/",
+  "name": "DoseMate - Smart Medicine Reminder & Alarm",
+  "short_name": "DoseMate",
+  "description": "Smart medicine reminder with audible alarm, voice alerts in English/Hindi, prescription scanner, and adherence dashboard.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#2563eb",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

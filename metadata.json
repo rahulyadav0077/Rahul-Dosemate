@@ -1,0 +1,6 @@
+{
+  "name": "DoseMate - Smart Medicine Reminder & Alarm System",
+  "description": "Smart medicine reminder, audible alarm, Hindi/English voice announcements, prescription OCR scanner, and adherence tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

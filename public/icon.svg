@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="doseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <linearGradient id="pillGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="crossGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#dc2626" />
+    </linearGradient>
+  </defs>
+  <!-- Background with rounded corners -->
+  <rect width="512" height="512" rx="112" fill="url(#doseGrad)" />
+  <!-- Inner soft circle -->
+  <circle cx="256" cy="256" r="180" fill="#ffffff" opacity="0.12" />
+  
+  <!-- Pill Capsule Angled -->
+  <g transform="translate(256,256) rotate(-45) translate(-256,-256)">
+    <!-- Pill Left Half -->
+    <path d="M196,160 C143,160 100,203 100,256 C100,309 143,352 196,352 L256,352 L256,160 Z" fill="#ffffff" />
+    <!-- Pill Right Half -->
+    <path d="M256,160 L316,160 C369,160 412,203 412,256 C412,309 369,352 316,352 L256,352 Z" fill="url(#crossGrad)" />
+    <!-- Center separator line -->
+    <line x1="256" y1="160" x2="256" y2="352" stroke="#e2e8f0" stroke-width="6" />
+    <!-- Pill Highlight shine -->
+    <path d="M140,200 C155,185 180,180 210,180" stroke="#ffffff" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.8" />
+  </g>
+
+  <!-- Alarm Bell / Clock Accent Badge at Bottom Right -->
+  <circle cx="360" cy="360" r="64" fill="#fbbf24" stroke="#ffffff" stroke-width="8" />
+  <!-- Clock hands -->
+  <path d="M360,332 L360,360 L380,372" stroke="#78350f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  <!-- Bell top knob -->
+  <path d="M360,296 L360,290" stroke="#fbbf24" stroke-width="8" stroke-linecap="round" />
+</svg>
