@@ -10,7 +10,7 @@ import {
   User,
 } from '../types';
 
-const API_BASE = '/api';
+const API_BASE = 'https://rahul-dosemate-backend.onrender.com/api';
 const TOKEN_KEY = 'dosemate_jwt_token';
 const USER_KEY = 'dosemate_user_data';
 const MEDICINES_KEY = 'dosemate_medicines_v1';
