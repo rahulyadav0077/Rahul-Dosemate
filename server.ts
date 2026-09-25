@@ -19,7 +19,7 @@ const app = express();
 const PORT = Number(process.env.PORT) || 3000;
 
 app.use(express.json({ limit: '10mb' }));
-
+app.use(cors());
 // In-memory / file persistent DB store
 const DATA_FILE = path.resolve('./dosemate_data.json');
 
