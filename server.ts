@@ -1,3 +1,10 @@
+declare global {
+  namespace Express {
+    interface Request {
+      user?: any;
+    }
+  }
+}
 import cors from 'cors';
 import express from 'express';
 import path from 'path';
@@ -303,7 +310,7 @@ app.post('/api/auth/register', (req, res) => {
   saveDatabase(db);
 
   const token = createToken(newUser.id);
-  newUser.token = token;
+  (newUser as any).token = token;
   saveDatabase(db);
 
   return res.json({

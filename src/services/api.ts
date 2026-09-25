@@ -629,11 +629,11 @@ class ApiService {
   public async addHistoryEntry(
     entry: Omit<MedicineHistory, 'id' | 'user_id' | 'created_at'>
   ): Promise<MedicineHistory> {
-    const user = this.getCurrentUser() || DEFAULT_USER;
+    const user = this.getCurrentUser() || null;
     const newEntry: MedicineHistory = {
       ...entry,
       id: `hist-${Date.now()}-${Math.random().toString(36).substring(2, 6)}`,
-      user_id: user.id,
+      user_id: user ? user.id : '',
       created_at: new Date().toISOString(),
     };
 
